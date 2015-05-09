@@ -1,0 +1,801 @@
+/*
+Design by Salvocom
+http://www.salvocom.altervista.org
+
+*/
+
+body {
+	margin: auto;
+	padding: 0;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #636363;
+}
+
+p {
+	margin: 0px;
+}
+
+a {
+	text-decoration: none;
+	color: #FF8E00;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+.spacer {
+	border-top: #636363 dashed 1px;
+	height: 0;
+}
+
+#header {
+	width: 100%;
+	height: 200px;
+	margin: 0;
+	background: url("images/logo.png") no-repeat top left;
+	background-color: #F0F0F0;
+	border-bottom: #636363 solid 1px;
+}
+
+#header-content {
+	width: 100%;
+	height: 60px;
+	padding-left: 260px;
+}
+
+	#header h1 {
+		padding: 54px 0px 0px 0px;
+		font-size: 50px;
+		float: left;
+		margin: 0px;
+		font-weight: normal;
+		letter-spacing: -2px;
+		color: #FF8E00;
+	}
+	
+	#header p{
+		padding: 62px 0px 0px 15px;
+		float: left;
+		text-transform: lowercase;
+		font-family: Georgia, "Times New Roman", Times, serif;
+		font-size: 24px;
+		color: #636363;
+	}
+
+#menu {
+	padding: 80px 0 0 260px;
+	width: 100%;
+	height: 60px;
+}
+
+	#menu ul {
+		margin: 0;
+		padding: 22px 0px 0px 0px;
+		list-style: none;
+	}
+
+	#menu li {
+		display: block;
+		float: left;
+	}
+
+	#menu a {
+		outline: none;
+		display: block;
+		float: left;
+		height: 28px;
+		padding: 7px 10px 0px 10px;
+		margin: 0px 10px 0px 0px;
+		letter-spacing: -1px;
+		text-align: center;
+		text-transform: lowercase;
+		text-decoration: none;
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: 18px;
+		color: #636363;
+	}
+
+	#menu a:hover, #menu a.current {
+		border-bottom: #636363 solid 3px;
+		color: #FF8E00; 
+	}
+	
+#undermenu {
+	padding: 0 0 0 260px;
+	width: 100%;
+	height: 40px;
+}	
+		#undermenu ul  {
+			margin: 0;
+			padding: 0;
+			list-style: none;
+		}
+
+		#undermenu li.right {
+			display: block;
+			float: left;
+			border-right	: #636363 solid 1px;
+			border-bottom: #636363 solid 1px;
+			border-top: #F0F0F0 solid 1px;
+		}
+		
+		#undermenu li.left {
+			display: block;
+			float: left;
+			border-left: #636363 solid 1px;
+			border-bottom: #636363 solid 1px;
+			border-top: #F0F0F0 solid 1px;
+		}
+		
+		#undermenu li {
+			display: block;
+			float: left;
+			border-top: #F0F0F0 solid 1px;
+			border-bottom: #636363 solid 1px;
+		}
+
+		#undermenu a {
+			outline: none;
+			display: block;
+			float: left;
+			height: 28px;
+			padding: 7px 10px 0px 10px;
+			margin: 0px 0px 0px 0px;
+			letter-spacing: -1px;
+			text-align: center;
+			text-transform: lowercase;
+			text-decoration: none;
+			font-family: Arial, Helvetica, sans-serif;
+			font-size: 16px;
+			color: #636363;
+		}
+
+		#undermenu a:hover {
+			background-color: #F0F0F0;
+			color: #FF8E00; 
+		}
+
+#container {
+	width: 100%;
+	margin: 40px auto;
+}
+
+	#container h3 {	
+		margin: 10px 30px;
+		color: #FF8E00;
+		font-weight: normal;
+		font-size: 24px;
+	}
+	
+	#container .left {	
+		float: left;
+	}	
+
+	#container .par {
+		margin: 30px auto;
+		text-align: center;
+	}
+	
+	#container #tablediv {
+		float: left;
+	}
+	
+	/***********List Table***********/
+	#container #listtab {
+		float: left;
+		border: #636363 solid 1px;
+		margin: 20px 30px;
+		width: 0px;
+	}
+	
+	#container #listtab thead {
+		background-color: #F0F0F0;
+		font-weight: bold;
+	}
+	
+	#container #listtab td {
+		border: #636363 solid 1px;
+	}
+
+	#container #listtab td p,a{
+		outline: none;
+		padding: 5px;
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: 12px;
+		color: #636363;
+		white-space: nowrap;
+	}
+	
+	#container #listtab td a{
+		color: #FF8E00;
+	}
+	
+	#container #listtab td a:hover{
+		text-decoration: none;
+		font-weight: bold;
+	}
+		
+	/***********Form Table***********/
+	#container #formtab {
+		float: left;
+		border: #636363 solid 1px;
+		padding: 10px 10px 10px 10px;
+		margin: 16px 0px 16px 30px;
+		width: 0px;
+		background-color: #F0F0F0;
+	}
+	
+	#container #formtab td p {
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: 16px;
+		color: #636363;
+		white-space: nowrap;
+	}
+
+	#container #formtab td input, textarea, select {
+		display: block;
+		border: #FF8E00 solid 1px;
+		margin: 5px 25px;
+		height: 20px;
+		font-family: Georgia, "Times New Roman", Times, serif;
+		font-size: 14px;
+		color: #636363;
+	}
+	
+	#container #formtab td select {
+		display: block;
+		border: #FF8E00 solid 1px;
+		margin: 5px 25px;
+		height: 24px;
+		font-family: Georgia, "Times New Roman", Times, serif;
+		font-size: 14px;
+		color: #636363;
+	}
+	
+	#container #formtab td textarea {
+		display: block;
+		border: #FF8E00 solid 1px;
+		margin: 5px 25px;
+		height: 80px;
+		font-family: Georgia, "Times New Roman", Times, serif;
+		font-size: 14px;
+		color: #636363;
+	}
+	
+	#container #formtab td .textareamail {
+		height: 200px;
+		width: 505px;
+	}
+
+	/***********Search Table***********/
+	#container #search {
+		padding: 50px 10px 0px 10px;
+		margin: 0 auto;
+		width: 500px;
+	}
+	
+	#container #search td {
+		background-color: #F0F0F0;
+		border: #636363 solid 1px;
+		padding: 5px;
+		width: 400px;
+		height: 140px;
+	}
+	
+	#container #search td h3 {
+		margin-top: -14px;
+		text-align: center;	
+		color: #FF8E00;
+		font-weight: normal;
+		font-size: 20px;
+	}
+	
+	#container #search td input, textarea {
+		display: block;
+		border: #FF8E00 solid 1px;
+		margin: 0 auto;
+		width: 200px;
+		height: 40px;
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: 16px;
+		color: #636363;
+	}
+	
+	/***********Select Table***********/
+	#container .selecttab {
+		clear: left;
+		float:left;
+		border: #636363 solid 1px;
+		border-collapse: collapse;
+		border-spacing: 1px;
+		padding: 10px 10px 10px 10px;
+		margin: 10px 0px 0px 30px;
+		width: 0px;
+		background-color: #F0F0F0;
+	}
+	
+	#container .selecttab th {
+		border: #636363 solid 1px;
+		padding: 5px;
+		text-align: left;
+		white-space: nowrap;
+	}
+
+	#container .selecttab td p {
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: 16px;
+		color: #636363;
+		white-space: nowrap;
+		margin: 0px;
+	}
+
+	#container .selecttab td input {
+		display: block;
+		border: #FF8E00 solid 1px;
+		margin: 0px;
+		height: 16px;
+		font-family: Georgia, "Times New Roman", Times, serif;
+		font-size: 14px;
+		color: #636363;
+	}
+	
+	#container .selecttab td select {
+		display: block;
+		border: #FF8E00 solid 1px;
+		margin: 0px;
+		height: 20px;
+		font-family: Georgia, "Times New Roman", Times, serif;
+		font-size: 14px;
+		color: #636363;
+	}
+	
+	#container .selecttab td textarea {
+		height: 80px;
+	}
+	
+	/***********Header Table***********/
+	#container .headtabfirst {
+		float: left;
+		border: #636363 solid 1px;
+		padding: 10px 30px 10px 10px;
+		margin: 0px 0px 0px 30px;
+		width: 0px;
+	}
+	
+	#container .headtabfirst td p {
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: 12px;
+		color: #636363;
+		white-space: nowrap;
+	}
+	
+	#container .headtabfirst td select {
+		display: block;
+		border: #636363 solid 1px;
+		margin: 0px;
+		height: 20px;
+		font-family: Georgia, "Times New Roman", Times, serif;
+		font-size: 14px;
+	}
+	
+	#container .headtabfirst td input {
+		display: block;
+		border: #636363 solid 1px;
+		margin: 0px;
+		height: 16px;
+		font-family: Georgia, "Times New Roman", Times, serif;
+		font-size: 12px;
+		color: #636363;
+	}
+	
+	/***********Header Table***********/
+	#container .headtab {
+		float: left;
+		border: #636363 solid 1px;
+		padding: 10px 30px 10px 10px;
+		margin: 0px 0px 0px 0px;
+		width: 0px;
+	}
+	
+	#container .headtab td p {
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: 12px;
+		color: #636363;
+		white-space: nowrap;
+	}
+	
+	#container .headtab td select {
+		display: block;
+		border: #636363 solid 1px;
+		margin: 0px;
+		height: 20px;
+		font-family: Georgia, "Times New Roman", Times, serif;
+		font-size: 12px;
+	}
+	
+	#container .headtab td input {
+		display: block;
+		border: #636363 solid 1px;
+		margin: 0px;
+		height: 16px;
+		font-family: Georgia, "Times New Roman", Times, serif;
+		font-size: 12px;
+		color: #636363;
+	}
+
+	/***********Fatture Table***********/
+	#container .esamitab {
+		background-color: #F0F0F0;
+		clear: left;
+		float:left;
+		border: #636363 solid 1px;
+		padding: 10px;
+		margin: 16px 0px 0px 30px;
+		width: 0px;
+	}
+	
+	#container .esamitab td {
+		padding-right: 16px;
+	}
+	
+	#container .esamitab td p {
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: 12px;
+		font-weight: bold;
+		color: #636363;
+		white-space: nowrap;
+	}
+	
+	#container .esamitab td input {
+		display: block;
+		border: #FF8E00 solid 1px;
+		margin: 0px;
+		height: 16px;
+		font-family: Georgia, "Times New Roman", Times, serif;
+		font-size: 14px;
+		text-align: left;
+		color: #636363;
+	}
+	
+	#container .esamitab td select {
+		display: block;
+		border: #FF8E00 solid 1px;
+		margin: 0px;
+		height: 20px;
+		width: 24px;
+		font-family: Georgia, "Times New Roman", Times, serif;
+		font-size: 14px;
+		color: #636363;
+	}
+	
+	#container .esamitab td .radio {
+		border: none;
+		display: block;
+		float: left;
+		margin-right: 4px;
+		color: #636363;
+		margin: 4px 4px;
+	}
+	
+	#container .esamitab td span {
+		border: none;
+		display: block;
+		float: left;
+		margin-right: 0px;
+		color: #636363;
+		padding: 4px 0px;
+	}
+	
+	#container .esamitab td textarea {
+		display: block;
+		border: #FF8E00 solid 1px;
+		margin: 0;
+		height: 80px;
+		width: 445px;
+		font-family: Georgia, "Times New Roman", Times, serif;
+		font-size: 12px;
+		color: #636363;
+	}
+	
+	#container .esamitab .theader p{
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: 12px;
+		font-weight: normal;
+		color: #636363;
+	}
+	
+	#container .esamitab .theader b{
+		margin-left: 20px;
+	}
+	
+	#container .esamitab .theader b.first{
+		margin-left: 0;
+	}
+	
+	#container .esamitab td p.title{
+		color: #FF8E00;
+		padding-left: 280px;
+	}
+
+	/***********Fatture Table***********/
+	#container .fatturetab {
+		background-color: #F0F0F0;
+		float: left;
+		border: #636363 solid 1px;
+		padding: 10px;
+		margin: 10px 30px 0px 1px;
+		width: 0px;
+	}
+	
+	#container .fatturetab td {
+		padding-right: 24px;
+	}
+	
+	#container .fatturetab td p {
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: 12px;
+		color: #636363;
+		white-space: nowrap;
+	}
+	
+	#container .fatturetab td input {
+		display: block;
+		border: #636363 solid 1px;
+		margin: 0px;
+		height: 16px;
+		font-family: Georgia, "Times New Roman", Times, serif;
+		font-size: 14px;
+		text-align: right;
+		color: #636363;
+	}
+	
+	#container .fatturetab td .checkbox {
+		border: none;
+		margin-left: 110px;
+		margin-top: -14px;
+		height: 16px;
+		font-family: Georgia, "Times New Roman", Times, serif;
+		font-size: 14px;
+		color: #636363;
+	}
+	
+	#container .fatturetab td .radio {
+		border: none;
+		display: block;
+		float: left;
+		margin: 0;
+		height: 16px;
+		font-family: Georgia, "Times New Roman", Times, serif;
+		font-size: 14px;
+		color: #636363;
+	}
+	
+	#container .fatturetab td .radioleft {
+		border: none;
+		display: block;
+		float: left;
+		margin-left: -13px;
+		height: 16px;
+		color: #636363;
+	}
+	
+	/***********List Fatture Table***********/
+	#container #archiviotab {
+		border: #636363 solid 1px;
+		margin: 20px 30px;
+		width: 0px;
+	}
+	
+	#container #archiviotab thead {
+		background-color: #F0F0F0;
+		font-weight: bold;
+	}
+	
+	#container #archiviotab td {
+		border: #636363 solid 1px;
+	}
+
+	#container #archiviotab td p,a{
+		outline: none;
+		padding: 5px;
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: 12px;
+		color: #636363;
+		white-space: nowrap;
+	}
+	
+	#container #archiviotab td a{
+		color: #FF8E00;
+	}
+	
+	#container #archiviotab td a:hover{
+		text-decoration: none;
+		font-weight: bold;
+	}
+	
+	/***********Button Table***********/	
+	#buttonsdivcenter {
+		border: #636363 solid 1px;
+		padding: 0px;
+		width: 480px;
+		margin: 0 auto;
+	}
+	
+	#buttonsdivcenter h3 {
+		padding: 10px;
+		margin: 0px;
+		width: 120px;
+		font-size: 20px;
+	}
+	
+	#buttonsdivcenter #buttons {
+		padding: 0px;
+		width: 0px;
+		margin: auto;
+	}
+		
+	#buttonsdivcenter #buttons td {
+		padding: 5px;
+		width: 70px;
+		height: 70px;
+	}
+	
+	#buttonsdivcenter #buttons a {
+		text-decoration: none;
+		display: block;
+		background-color: #F0F0F0;
+		border: #636363 solid 1px;
+		text-align: center;
+		font-size: 13px;
+		font-family: Georgia, "Times New Roman", Times, serif;
+		width: 70px;
+		height: 70px;
+		color: #636363;
+		outline: none;
+		white-space: normal;
+	}
+		
+	#buttonsdivcenter #buttons a:hover {
+		background-color: #FF8E00;
+	}
+
+		#buttonsdivcenter #buttons a p {
+			padding-top: 20px;
+		}
+	
+	/***********Button Table***********/	
+	#buttonsdivright {
+		float: left;
+		border: #636363 solid 1px;
+		padding: 0px;
+		margin: 0px 0px 0px 65px;
+		width: 285px;
+	}
+	
+	#buttonsdivright h3 {
+		padding: 6px;
+		margin: 0px;
+		font-size: 20px
+	}
+	
+	#buttonsdivright #buttons {
+		padding: 0px;
+		width: 0px;
+	}
+		
+	#buttonsdivright #buttons td {
+		padding: 5px;
+		width: 70px;
+		height: 70px;
+	}
+	
+	#buttonsdivright #buttons a {
+		text-decoration: none;
+		display: block;
+		background-color: #F0F0F0;
+		border: #636363 solid 1px;
+		text-align: center;
+		font-size: 13px;
+		font-family: Georgia, "Times New Roman", Times, serif;
+		width: 70px;
+		height: 70px;
+		color: #636363;
+		outline: none;
+		white-space: normal;
+	}
+		
+	#buttonsdivright #buttons a:hover {
+		background-color: #FF8E00;
+	}
+
+		#buttonsdivright #buttons a p {
+			padding-top: 20px;
+		}
+	
+	/***********Button Table***********/	
+	#buttonsdiv {
+		float: left;
+		border: #636363 solid 1px;
+		padding: 0px;
+		margin: 16px 0px;
+		width: 190px;
+	}
+	
+	#buttonsdiv h3 {
+		padding: 6px;
+		margin: 0px;
+		font-size: 20px
+	}
+	
+	#buttonsdiv #buttons {
+		padding: 0px;
+		width: 0px;
+		margin: auto;
+	}
+		
+	#buttonsdiv #buttons td {
+		padding: 5px;
+		width: 70px;
+		height: 70px;
+	}
+	
+	#buttonsdiv #buttons a {
+		text-decoration: none;
+		display: block;
+		background-color: #F0F0F0;
+		border: #636363 solid 1px;
+		text-align: center;
+		font-size: 13px;
+		font-family: Georgia, "Times New Roman", Times, serif;
+		width: 70px;
+		height: 70px;
+		color: #636363;
+		outline: none;
+		white-space: normal;
+	}
+		
+	#buttonsdiv #buttons a:hover {
+		background-color: #FF8E00;
+	}
+
+		#buttonsdiv #buttons a p {
+			padding-top: 20px;
+		}
+		
+	/***********Archive Buttons Table***********/	
+	#container #archive {
+		padding: 10px 10px 10px 10px;
+		margin: 10px 35px 0 35px;
+		width: 0px;
+	}
+		
+	#container #archive td {
+		padding: 5px;
+		width: 10px;
+		height: 10px;
+	}
+	
+	#container #archive a {
+		text-decoration: none;
+		display: block;
+		background-color: #F0F0F0;
+		border: #636363 solid 1px;
+		text-align: center;
+		font-size: 13px;
+		font-weight: bold;
+		font-family: Georgia, "Times New Roman", Times, serif;
+		width: 10px;
+		height: 10px;
+		color: #636363;
+		outline: none;
+	}
+		
+	#container #archive a:hover {
+		background-color: #FF8E00;
+	}
+	
+		#container #archive a p {
+			padding-top: 0;
+		}
